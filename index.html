@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      // Task 1: Define Placeholder Selector
+      %card-styles {
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      // Task 2: Extend Placeholder Selector
+      .info-card {
+        @extend %card-styles;
+        background-color: #eaf6ff;
+        border: 1px solid #3498db;
+      }
+
+      .warning-card {
+        @extend %card-styles;
+        background-color: #fdf2e9;
+        border: 1px solid #e74c3c;
+      }
+    </style>
+    <title>Placeholder Selector Example</title>
+  </head>
+  <body>
+    <div class="info-card">Info Card</div>
+    <div class="warning-card">Warning Card</div>
+  </body>
+</html>
